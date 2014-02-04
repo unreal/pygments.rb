@@ -36,7 +36,7 @@ class TpLexer(RegexLexer):
 
   tokens = {
       'root': [
-          (r'  ![^;]*', Comment),
+          (r'\s+![^;]*', Comment),
           (r'"[^"]*"', String),
           (r'(\/PROG|\/ATTR|\/APPL|\/MN|\/POS|\/END)', Keyword.Declaration),
           (r'(ON|OFF)', Keyword.Pseudo),
